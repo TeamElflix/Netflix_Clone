@@ -8,7 +8,7 @@
   word-break: keep-all;
 }
 
-#nfHeader {
+#nf-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -37,7 +37,7 @@
   line-height: 57px;
 }
 
-.outerContainer {
+.outer-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -46,7 +46,7 @@
   overflow: hidden;
 }
 
-.innerContainer {
+.inner-container {
   display: flex;
   justify-content: center;
   align-items: center;
