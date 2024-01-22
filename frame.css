@@ -9,6 +9,9 @@
 }
 
 #nfHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   border-bottom: 1px solid #e6e6e6;
 }
 
@@ -16,5 +19,16 @@
   height: 45px;
   width: 167px;
   vertical-align: middle;
-  margin: 18px;
+  margin: 0 36.375px;
+}
+
+.login-link {
+  width: 48px;
+  height: 75px;
+  display: flex;
+  margin: 0 23.488px;
+  align-items: center;
+  color: #333;
+  font-weight: 500;
+  font-size: 16px;
 }
