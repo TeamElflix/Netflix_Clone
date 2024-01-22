@@ -1,0 +1,20 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.body {
+  word-break: keep-all;
+}
+
+#nfHeader {
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.netflix-logo {
+  height: 45px;
+  width: 167px;
+  vertical-align: middle;
+  margin: 18px;
+}
