@@ -36,3 +36,23 @@
   color: #333;
   line-height: 57px;
 }
+
+.outerContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw; /* 100% 화면 너비 */
+  height: 100vh; /* 100% 화면 높이 */
+  overflow: hidden;
+}
+
+.innerContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 600.2px;
+  height: 720.8px;
+  background-color: red;
+  padding: 20px 60px 32px 32px; /* 상, 우, 하, 좌 */
+  margin-bottom: 15px;
+}
