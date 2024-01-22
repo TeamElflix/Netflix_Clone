@@ -15,6 +15,10 @@
   border-bottom: 1px solid #e6e6e6;
 }
 
+/* .home-link {
+  margin: 20px;
+} */
+
 .netflix-logo {
   height: 45px;
   width: 167px;
@@ -23,12 +27,12 @@
 }
 
 .login-link {
-  width: 48px;
-  height: 75px;
-  display: flex;
+  width: 90px;
+  height: 57px;
+  float: right;
   margin: 0 23.488px;
-  align-items: center;
-  color: #333;
+  font-size: 19px;
   font-weight: 500;
-  font-size: 16px;
+  color: #333;
+  line-height: 57px;
 }
