@@ -37,7 +37,7 @@
   line-height: 57px;
 }
 
-.outer-container {
+.main-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -55,4 +55,17 @@
   background-color: red;
   padding: 20px 60px 32px 32px; /* 상, 우, 하, 좌 */
   margin-bottom: 15px;
+}
+
+.footer-wrap {
+  height: 345.6px;
+  color: #737373;
+  font-size: 1em;
+  margin-top: 80px;
+  min-width: 190px;
+  padding-bottom: 20px;
+  position: relative;
+  width: 100%;
+  background-color: #f3f3f3;
+  opacity: 1;
 }
