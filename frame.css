@@ -70,6 +70,11 @@
   opacity: 1;
 }
 
+.footer-wrap a {
+  color: #737373;
+  position: relative;
+}
+
 .nf-footer {
   margin: 0 30px;
   border: 1px solid blue;
@@ -90,6 +95,11 @@
 
 .footer-top-a {
   margin-left: 5px;
+  text-decoration: none; /* 밑줄 제거 */
+}
+
+.footer-top-a:hover {
+  text-decoration: underline;
 }
 
 .footer-link {
@@ -118,15 +128,8 @@
   position: relative; /* hover 상태일 때 ::after 가상 요소의 위치를 설정하기 위해 relative로 설정 */
 }
 
-.footer-link a::after {
-  content: "";
-  display: block;
-  border-bottom: 1px solid transparent;
-  transition: border-bottom-color 0.3s ease;
-}
-
-.footer-link a:hover::after {
-  border-bottom-color: #000;
+.footer-link a:hover {
+  text-decoration: underline;
 }
 
 .language-picker {
