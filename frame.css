@@ -128,3 +128,23 @@
 .footer-link a:hover::after {
   border-bottom-color: #000;
 }
+
+.language-picker {
+  width: 128px;
+  height: 48px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.language-picker option {
+  font-size: 16px;
+}
+
+.language-picker option[value="korean"] {
+  content: "한국어";
+}
+
+.language-picker option[value="english"] {
+  content: "English";
+}
