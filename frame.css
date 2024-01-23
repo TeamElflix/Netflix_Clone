@@ -151,3 +151,16 @@
 .language-picker option[value="english"] {
   content: "English";
 }
+
+.copy-text {
+  font-size: 0.75em;
+  line-height: 1em;
+}
+
+.copy-text > div:not(:first-child) {
+  margin-top: 4px;
+}
+
+.copy-text > div:first-child {
+  margin-top: 20px;
+}
