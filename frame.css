@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: "Netflix Sans", sans-serif;
 }
 
 .body {
@@ -61,11 +62,23 @@
   height: 345.6px;
   color: #737373;
   font-size: 1em;
-  margin-top: 80px;
   min-width: 190px;
   padding-bottom: 20px;
   position: relative;
   width: 100%;
   background-color: #f3f3f3;
   opacity: 1;
+}
+
+.nf-footer {
+  margin: 0 30px;
+  border: 1px solid blue;
+  width: calc(
+    100% - 60px
+  ); /* 부모 요소인 .footer-wrap과 같은 너비 적용 (좌우 30px씩 여백을 뺀 크기) */
+  height: 100%;
+}
+
+.nf-footer-top {
+  margin-bottom: 20px;
 }
