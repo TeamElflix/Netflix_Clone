@@ -82,3 +82,12 @@
 .nf-footer-top {
   margin-bottom: 20px;
 }
+
+.footer-top {
+  display: inline;
+  white-space: nowrap;
+}
+
+.footer-top-a {
+  margin-left: 5px;
+}
