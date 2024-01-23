@@ -91,3 +91,40 @@
 .footer-top-a {
   margin-left: 5px;
 }
+
+.footer-link {
+  width: 176px;
+  height: 17px;
+}
+
+.nf-footer-link-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-link {
+  list-style-type: none;
+  width: calc(
+    33.333% - 20px
+  ); /* 각 요소의 너비를 33.333%로 설정, 좌우 여백을 줄여줌 */
+  margin-bottom: 20px;
+  font-size: 13px;
+}
+
+.footer-link a {
+  text-decoration: none;
+  display: inline-block;
+  position: relative; /* hover 상태일 때 ::after 가상 요소의 위치를 설정하기 위해 relative로 설정 */
+}
+
+.footer-link a::after {
+  content: "";
+  display: block;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom-color 0.3s ease;
+}
+
+.footer-link a:hover::after {
+  border-bottom-color: #000;
+}
