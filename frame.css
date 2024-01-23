@@ -49,18 +49,22 @@
 
 .inner-container {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-end;
   align-items: center;
   width: 600.2px;
   height: 720.8px;
   background-color: skyblue;
-  padding: 20px 60px 32px 32px;
+  padding: 50px 32px;
   margin-bottom: 15px;
 }
 
 .button-container {
-  width: calc(100% - 160px);
+  width: 340px;
   height: 65px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 60px;
 }
 
 .next-button {
@@ -106,7 +110,6 @@
 
 .nf-footer {
   margin: 0 30px;
-  border: 1px solid blue;
   width: calc(
     100% - 60px
   ); /* 부모 요소인 .footer-wrap과 같은 너비 적용 (좌우 30px씩 여백을 뺀 크기) */
