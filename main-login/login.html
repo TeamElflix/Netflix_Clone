@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="login.css" />
+    <title>Elflix</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="login-background">
+        <img
+          class="background-img"
+          src="https://assets.nflxext.com/ffe/siteui/vlv3/16006346-87f9-4226-bc25-a1fb346a2b0c/d3a7ba79-d4b6-4406-bb77-bdf1032980c2/KR-ko-20240115-popsignuptwoweeks-perspective_alpha_website_large.jpg"
+          alt="Netflix background image"
+        />
+        <div class="black-transparent"></div>
+
+        <div class="header-logo">
+          <img src="../images/logo.png" alt="NETFLIX logo" width="202" />
+        </div>
+
+        <main id="main">
+          <div class="login-window">
+            <h4>로그인</h4>
+            <form class="login-input">
+              <ul>
+                <li>
+                  <input
+                    type="text"
+                    id="email-or-phoneNumber"
+                    placeholder="이메일 주소 또는 전화번호"
+                  />
+                  <label for="email-or-phoneNumber"
+                    >이메일 주소 또는 전화번호</label
+                  >
+                </li>
+                <li>
+                  <input type="text" id="password" placeholder="비밀번호" />
+                  <label for="password">비밀번호</label>
+                </li>
+              </ul>
+              <ul>
+                <li><input type="submit" value="로그인" /></li>
+              </ul>
+            </form>
+          </div>
+        </main>
+
+        <footer id="footer"></footer>
+      </div>
+    </div>
+    <script src="login.js"></script>
+  </body>
+</html>
