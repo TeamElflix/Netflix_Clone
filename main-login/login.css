@@ -137,3 +137,33 @@ label[for="password"] {
   padding-top: 20px;
   padding-bottom: 0px;
 }
+
+#main .login-window .check-assistance {
+  display: flex;
+}
+
+#main .login-window .check_wrap {
+  /* background-color: aqua; */
+  width: 200px;
+}
+
+#main .login-window .check_wrap input {
+  width: 18px; /* 체크박스 너비 */
+  height: 18px; /* 체크박스 높이 */
+  accent-color: #c7c7c7;
+  border-radius: 5px; /* 체크박스 모서리 둥글게 */
+  cursor: pointer; /* 마우스 커서를 포인터로 변경 */
+}
+
+#main .login-window .check_wrap input + label {
+  display: absolute;
+  color: #aaa;
+}
+
+#main .login-window .assistance {
+  width: 200px;
+}
+
+#main .login-window .content {
+  margin: 20px;
+}
