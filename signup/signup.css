@@ -74,10 +74,41 @@
   margin: 100px 0 20px;
 }
 
-.checkmark-group {
-  list-style-type: none;
-  width: 264px;
+.contextBody {
   font-size: 18px;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.checkmark-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.checkmark-group--row {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-top: 20px;
+}
+
+.check {
+  overflow: hidden;
+  align-self: flex-start;
+  width: 24px;
+  height: 24px;
+}
+
+.checkmark-group--textdata {
+  font-size: 18px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 10px;
 }
 
 .button-container {
