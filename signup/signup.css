@@ -55,13 +55,29 @@
 .inner-container {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  /* justify-content: flex-end; */
   align-items: center;
-  width: 600.2px;
+  width: 400.2px;
   height: 720.8px;
-  background-color: skyblue;
   padding: 50px 32px;
   margin-bottom: 15px;
+}
+
+.step-title {
+  display: inline-block;
+  text-align: center;
+}
+
+#check-with-circle {
+  width: 50px;
+  height: 50px;
+  margin: 100px 0 20px;
+}
+
+.checkmark-group {
+  list-style-type: none;
+  width: 264px;
+  font-size: 18px;
 }
 
 .button-container {
@@ -69,6 +85,7 @@
   height: 65px;
   display: flex;
   justify-content: center;
+  margin-top: 30px;
   margin-bottom: 60px;
 }
 
@@ -147,16 +164,19 @@
 .nf-footer-link-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start; /* 추가된 부분 */
 }
 
 .footer-link {
   list-style-type: none;
-  width: calc(
-    33.333% - 20px
-  ); /* 각 요소의 너비를 33.333%로 설정, 좌우 여백을 줄여줌 */
+  width: calc(25% - 15px);
+  margin-right: 20px;
   margin-bottom: 20px;
   font-size: 13px;
+}
+
+.footer-link:nth-child(4n) {
+  margin-right: 0;
 }
 
 .footer-link a {
