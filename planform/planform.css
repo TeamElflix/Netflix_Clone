@@ -52,27 +52,101 @@
   overflow: hidden;
 }
 
-/* .inner-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
-  width: 600.2px;
-  height: 720.8px;
-  background-color: skyblue;
-  padding: 50px 32px;
-  margin-bottom: 15px;
-} */
-
 .inner-container {
   width: 100%;
   height: 100%;
-  max-width: 560px;
+  max-width: 1024px;
   margin: 0px auto;
   padding: 20px 25px;
   box-sizing: border-box;
   transition: none 0s ease 0s;
   background-color: aquamarine;
+}
+
+.form-plan-selection {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+
+.plan-container {
+  flex: 1 1 auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* 세로축 상단 정렬 */
+  border: 1px solid rgba(128, 128, 128, 0.7);
+  border-radius: 18px;
+  position: relative;
+  transition: margin 250ms ease-in-out 0s, box-shadow 250ms ease-in-out 0s,
+    border-color 250ms ease-in-out 0s;
+  margin: 0px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 4px 10px 0px;
+  height: 600px;
+  overflow: hidden;
+  padding-top: 10px;
+}
+
+/* 공통 스타일 */
+.plan {
+  width: 280px;
+  height: 65px;
+  display: flex; /* Flexbox를 활성화합니다 */
+  flex-direction: column;
+  justify-content: center; /* 세로축 중앙 정렬 */
+  padding: 10px 16px;
+  overflow: hidden;
+  border: 1px solid rebeccapurple;
+  border-radius: 12px;
+  box-sizing: border-box;
+  transition: box-shadow 100ms ease-in-out 0s;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 13px -3px;
+  color: white;
+}
+
+/* 프리미엄 */
+#premium {
+  background: radial-gradient(
+      140.76% 131.96% at 100% 100%,
+      rgb(229, 9, 20) 0%,
+      rgba(74, 42, 150, 0.5) 73.57%,
+      rgba(74, 42, 150, 0) 100%
+    ),
+    rgb(142, 151, 164);
+}
+
+/* 스탠다드 */
+#standard {
+  background: radial-gradient(
+      140.76% 131.96% at 100% 100%,
+      rgb(176, 56, 220) 0%,
+      rgba(74, 42, 150, 0.5) 73.57%,
+      rgba(74, 42, 150, 0) 100%
+    ),
+    rgb(29, 82, 157);
+}
+
+/* 광고형 스탠다드 */
+#ad-standard {
+  background: radial-gradient(
+      140.76% 131.96% at 100% 100%,
+      rgb(109, 59, 227) 0%,
+      rgba(74, 42, 150, 0.5) 73.57%,
+      rgba(74, 42, 150, 0) 100%
+    ),
+    rgb(29, 82, 157);
+}
+
+.plan-text {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.quality {
+  font-size: 10px;
 }
 
 .stepIndicator {
