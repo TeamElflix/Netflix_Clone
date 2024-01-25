@@ -79,6 +79,7 @@
   width: 354px;
   height: 55px;
   margin-top: 25px;
+  margin-bottom: 10px;
 }
 
 input::placeholder {
@@ -140,6 +141,7 @@ label[for="password"] {
 
 #main .login-window .check-assistance {
   display: flex;
+  width: 354px;
 }
 
 #main .login-window .check_wrap {
@@ -148,20 +150,34 @@ label[for="password"] {
 }
 
 #main .login-window .check_wrap input {
-  width: 18px; /* 체크박스 너비 */
-  height: 18px; /* 체크박스 높이 */
-  accent-color: #c7c7c7;
-  border-radius: 5px; /* 체크박스 모서리 둥글게 */
+  width: 17px; /* 체크박스 너비 */
+  height: 17px; /* 체크박스 높이 */
+  accent-color: #858585;
+  border-radius: 2px; /* 체크박스 모서리 둥글게 */
   cursor: pointer; /* 마우스 커서를 포인터로 변경 */
 }
 
 #main .login-window .check_wrap input + label {
   display: absolute;
   color: #aaa;
+  font-size: 14px;
 }
 
-#main .login-window .assistance {
-  width: 200px;
+#main .login-window .login-input .check-assistance .assistance {
+  display: absolute;
+  width: 140px;
+}
+
+#main .login-window .login-input .check-assistance .assistance a {
+  display: absolute;
+  color: #aaa;
+  text-decoration-line: none;
+  font-size: 14px;
+}
+
+#main .login-window .login-input .check-assistance .assistance a:hover {
+  /* color: white; */
+  text-decoration-line: underline;
 }
 
 #main .login-window .content {
