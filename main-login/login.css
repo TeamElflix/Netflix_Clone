@@ -190,7 +190,7 @@ label[for="password"] {
 
 #main .login-window .info {
   display: absolute;
-  color: #aaa;
+  color: #808080;
   margin-top: 110px;
 }
 
@@ -218,4 +218,11 @@ label[for="password"] {
 
 #main .login-window .info .isUser a:hover {
   text-decoration-line: underline;
+}
+
+#main .login-window .info .two {
+  width: 310px;
+  margin-top: 13px;
+  margin-left: 72px;
+  font-size: 14px;
 }
