@@ -226,3 +226,32 @@ label[for="password"] {
   margin-left: 72px;
   font-size: 14px;
 }
+
+#main .login-window .info button {
+  background-color: transparent;
+  color: rgb(79, 105, 255);
+  border: 0px;
+
+  position: relative;
+  top: -131px;
+  right: -305px;
+
+  font-size: 14px;
+}
+
+#main .login-window .info button {
+  text-decoration-line: underline;
+}
+
+#main .login-window #detailsContent {
+  width: 320px;
+  font-size: 14px;
+
+  position: relative;
+  top: -220px;
+  right: -71px;
+}
+
+#main .login-window #detailsContent span {
+  color: rgb(79, 105, 255);
+}
