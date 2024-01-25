@@ -54,6 +54,7 @@
   margin: 145px 75px;
   width: 66%;
   height: 250px;
+  margin-bottom: 0px;
 }
 
 #main .login-window .login-input input {
@@ -142,10 +143,10 @@ label[for="password"] {
 #main .login-window .check-assistance {
   display: flex;
   width: 354px;
+  margin-bottom: 0px;
 }
 
 #main .login-window .check_wrap {
-  /* background-color: aqua; */
   width: 200px;
 }
 
@@ -165,7 +166,8 @@ label[for="password"] {
 
 #main .login-window .login-input .check-assistance .assistance {
   display: absolute;
-  width: 140px;
+  width: 160px;
+  /* background-color: aqua; */
 }
 
 #main .login-window .login-input .check-assistance .assistance a {
@@ -173,13 +175,47 @@ label[for="password"] {
   color: #aaa;
   text-decoration-line: none;
   font-size: 14px;
+
+  position: relative;
+  right: -20px;
 }
 
 #main .login-window .login-input .check-assistance .assistance a:hover {
-  /* color: white; */
   text-decoration-line: underline;
 }
 
 #main .login-window .content {
   margin: 20px;
+}
+
+#main .login-window .info {
+  display: absolute;
+  color: #aaa;
+  margin-top: 110px;
+}
+
+#main .login-window .info .isUser {
+  display: flex;
+
+  width: 340px;
+
+  margin-left: 72px;
+}
+
+#main .login-window .info .isUser .one {
+  font-size: 17px;
+}
+
+#main .login-window .info .isUser a {
+  margin-left: 10px;
+  text-decoration-line: none;
+  color: white;
+  font-size: 18px;
+
+  position: relative;
+  top: -3px;
+}
+
+#main .login-window .info .isUser a:hover {
+  text-decoration-line: underline;
 }
