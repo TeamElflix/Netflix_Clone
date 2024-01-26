@@ -9,7 +9,8 @@
 }
 
 .login-background .background-img {
-  width: 2475px;
+  /*width: 2475px;*/
+  width: 2560px;
 }
 
 .black-transparent {
@@ -259,7 +260,7 @@ label[for="password"] {
   color: rgb(79, 105, 255);
 }
 
-.login-background #footer {
+/*.login-background #footer {
   position: absolute;
   top: 901px;
 
@@ -268,9 +269,9 @@ label[for="password"] {
 
   background-color: rgb(0, 0, 0, 0.7);
   color: #aaa;
-}
+}*/
 
-.footer-text {
+/*.footer-text {
   position: relative;
   top: 75px;
   left: 38px;
@@ -293,6 +294,134 @@ label[for="password"] {
 .footer-text .company-info {
   position: relative;
   top: 10px;
+}*/
+
+.footer-wrap {
+  height: 345.6px;
+  min-width: 190px;
+  padding-bottom: 20px;
+  width: 100%;
+  opacity: 1;
+
+  position: absolute;
+  top: 948px;
+  height: 33.1%;
+  background-color: rgb(0, 0, 0, 0.7);
+  color: #aaa;
+}
+
+.footer-wrap a {
+  color: #aaa;
+  position: relative;
+}
+
+.nf-footer {
+  margin: 70px 410px;
+  /*width: calc(
+    100% - 60px
+  );*/ /* 부모 요소인 .footer-wrap과 같은 너비 적용 (좌우 30px씩 여백을 뺀 크기) */
+  height: 100%;
+}
+
+.nf-footer-top {
+  padding-top: 20px;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.footer-top {
+  display: inline;
+  white-space: nowrap;
+}
+
+.footer-top-a {
+  margin-left: 5px;
+  /*text-decoration: none;*/
+}
+
+/*.footer-top-a:hover {
+  text-decoration: underline;
+}*/
+
+.footer-link {
+  width: 176px;
+  height: 17px;
+  font-size: 16px;
+}
+
+.nf-footer-link-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#first,
+#second,
+#third,
+#fourth {
+  justify-content: space-between;
+}
+#fifth,
+#sixth {
+  justify-content: flex-start;
+}
+
+.footer-link {
+  list-style-type: none;
+  /*width: calc(
+    33.333% - 20px
+  );*/ /* 각 요소의 너비를 33.333%로 설정, 좌우 여백을 줄여줌 */
+  width: calc(25% - 20px);
+  margin-bottom: 30px;
+  /*font-size: 13px;*/
+}
+
+.footer-link a {
+  /*text-decoration: none;*/
+  display: inline-block;
+  position: relative; /* hover 상태일 때 ::after 가상 요소의 위치를 설정하기 위해 relative로 설정 */
+}
+
+.footer-link a:hover {
+  text-decoration: underline;
+}
+
+.language-picker {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 130px;
+  height: 38px;
+  font-size: 16px;
+  box-shadow: 0 0 0.5px rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  background-color: rgb(0, 0, 0, 0.7);
+  color: white;
+}
+
+.language-picker option {
+  font-size: 16px;
+}
+
+.language-picker option[value="korean"] {
+  content: "한국어";
+}
+
+.language-picker option[value="english"] {
+  content: "English";
+}
+
+.copy-text {
+  font-size: 0.85em;
+  line-height: 1em;
+
+  margin-top: 20px;
+}
+
+.copy-text > div:not(:first-child) {
+  margin-top: 4px;
+}
+
+.copy-text > div:first-child {
+  margin-top: 20px;
 }
 
 @media (min-width: 300px) and (max-width: 820px) {
