@@ -71,11 +71,33 @@
   gap: 10px;
 }
 
+.detail {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.4);
+  margin: 20px;
+}
+
+.detail--text {
+  font-size: 0.8125rem;
+  font-weight: 500;
+  line-height: 1.53846;
+  color: rgb(118, 118, 118);
+}
+
+.detail--option {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5;
+  color: rgba(0, 0, 0, 0.7);
+}
+
 .plan-container {
   flex: 1 1 auto;
   display: flex;
-  justify-content: center;
-  align-items: flex-start; /* 세로축 상단 정렬 */
+  flex-direction: column;
+  align-items: flex-start;
   border: 1px solid rgba(128, 128, 128, 0.7);
   border-radius: 18px;
   position: relative;
@@ -95,6 +117,7 @@
   display: flex; /* Flexbox를 활성화합니다 */
   flex-direction: column;
   justify-content: center; /* 세로축 중앙 정렬 */
+  align-items: center;
   padding: 10px 16px;
   overflow: hidden;
   border: 1px solid rebeccapurple;
@@ -189,6 +212,8 @@
 .next-button:hover {
   opacity: 0.7;
 }
+
+/* FOOTER */
 
 .footer-wrap {
   height: 345.6px;
