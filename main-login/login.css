@@ -267,6 +267,32 @@ label[for="password"] {
   height: 35%;
 
   background-color: rgb(0, 0, 0, 0.7);
+  color: #aaa;
+}
+
+.footer-text {
+  position: relative;
+  top: 75px;
+  left: 38px;
+}
+
+.footer-text .question {
+  font-size: 18px;
+}
+
+.footer-text .menu {
+  position: relative;
+  top: 10px;
+}
+
+.footer-text .lang {
+  position: relative;
+  top: 10px;
+}
+
+.footer-text .company-info {
+  position: relative;
+  top: 10px;
 }
 
 @media (min-width: 300px) and (max-width: 820px) {
