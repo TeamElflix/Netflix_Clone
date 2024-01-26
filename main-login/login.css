@@ -353,7 +353,7 @@ label[for="password"] {
   }
 
   #main .login-window .info .detail-wrap .two {
-    width: 100%;
+    width: 90%;
     margin-top: -65px;
     margin-left: 39px;
     margin-right: 0px;
@@ -369,11 +369,11 @@ label[for="password"] {
   }
 
   #main .login-window #detailsContent {
-    width: 320px;
+    width: 90%;
     font-size: 14px;
 
     position: relative;
-    top: -120px;
-    right: -71px;
+    top: -320px;
+    right: -36px;
   }
 }
