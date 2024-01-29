@@ -204,12 +204,13 @@
   font-size: 13px;
 }
 
-.button-container {
-  height: 100vh; /* 100% 화면 높이 */
-  width: 340px;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 60px;
+.small--plan--explanation {
+  display: block;
+  margin-top: 10px;
+}
+
+.small--plan--explanation:last-of-type {
+  margin-bottom: 20px;
 }
 
 .button-container {
@@ -217,7 +218,7 @@
   height: 65px;
   display: flex;
   justify-content: center;
-  margin-bottom: 60px;
+  margin: auto; /* 상하좌우 마진을 자동으로 조절하여 가운데 정렬 */
 }
 
 .next-button {
