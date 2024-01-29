@@ -48,7 +48,7 @@
   justify-content: center;
   align-items: center;
   width: 100vw; /* 100% 화면 너비 */
-  height: 100vh; /* 100% 화면 높이 */
+  height: 120vh; /* 100% 화면 높이 */
   overflow: hidden;
 }
 
@@ -180,6 +180,36 @@
 .stepTitle {
   font-size: 32px;
   font-weight: 400;
+}
+
+.text-container {
+  font-size: 0;
+}
+
+.text-container a {
+  font-size: 13px;
+}
+
+.text-container.link {
+  color: #0071eb;
+  text-decoration: none;
+  display: inline;
+}
+
+.text-container.link:hover {
+  text-decoration: underline;
+}
+
+.text-container small {
+  font-size: 13px;
+}
+
+.button-container {
+  height: 100vh; /* 100% 화면 높이 */
+  width: 340px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 60px;
 }
 
 .button-container {
