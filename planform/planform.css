@@ -44,6 +44,10 @@
   text-decoration: underline;
 }
 
+.stepTitle {
+  margin-bottom: 18px;
+}
+
 .main-container {
   display: flex;
   justify-content: center;
@@ -171,14 +175,17 @@
   font-weight: 500;
   line-height: 1.5;
   margin: 0;
+  color: white;
 }
 
 .quality {
+  color: white;
   font-size: 10px;
 }
 
 .stepIndicator {
   font-size: 13px;
+  font-weight: 500;
   text-align: inherit;
 }
 
