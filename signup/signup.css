@@ -228,16 +228,22 @@
   border-radius: 4px;
 }
 
-.language-picker option {
-  font-size: 16px;
+.language-picker-container {
+  position: relative;
+  display: inline-block;
 }
 
-.language-picker option[value="korean"] {
-  content: "한국어";
+.language-picker {
+  padding-left: 30px;
 }
 
-.language-picker option[value="english"] {
-  content: "English";
+.language-icon {
+  position: absolute;
+  left: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
 }
 
 .copy-text {

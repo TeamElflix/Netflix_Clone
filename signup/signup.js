@@ -1,15 +1,15 @@
 window.onload = function () {
-  var select = document.querySelector(".language-picker");
-  var options = [
-    { text: "한국어", value: "korean" },
-    { text: "English", value: "english" },
-  ];
+  const plans = document.querySelectorAll(".plan-container");
+  plans.forEach((plan) => {
+    plan.addEventListener("click", function () {
+      const container = this.closest(".plan-container");
 
-  for (var i = 0; i < options.length; i++) {
-    var opt = options[i];
-    var el = document.createElement("option");
-    el.textContent = opt.text;
-    el.value = opt.value;
-    select.appendChild(el);
-  }
+      document.querySelectorAll(".plan-container").forEach((otherContainer) => {
+        if (otherContainer !== container) {
+          otherContainer.style.transition = "";
+          otherContainer.style.boxShadow = "";
+        }
+      });
+    });
+  });
 };
