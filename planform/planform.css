@@ -76,6 +76,12 @@
   gap: 10px;
 }
 
+.details-container {
+  width: 100%; /* 또는 원하는 너비로 설정 */
+  max-width: 800px; /* 또는 원하는 최대 너비로 설정 */
+  margin: 0 auto; /* 중앙 정렬을 위해 auto로 설정 */
+}
+
 .detail {
   display: flex;
   justify-content: space-between;
@@ -245,7 +251,7 @@
 }
 
 .button-container {
-  width: 340px;
+  width: 440px;
   height: 65px;
   display: flex;
   justify-content: center;
