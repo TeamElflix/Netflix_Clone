@@ -27,12 +27,14 @@
               <form method="POST">
                 <div class="regFormContainer"">
                     <div class=" stepHeader-container">
-                  <div class="stepHeader" role="status"><span class="stepIndicator"><b>2</b>/<b>3단계</b></span>
+                  <div class="stepHeader" role="status">
+                    <span class="stepIndicator"><b>2</b>/<b>3단계</b></span>
                     <h1 class="stepTitle">비밀번호를 설정해 멤버십을 시작하세요.</h1>
                   </div>
                 </div>
                 <div>
-                  <div class="contextRow">몇 단계만 더 거치면 넷플릭스 가입 완료!</div><span class="contextRow">복잡한 단계는 모두 없앴습니다.</span>
+                  <div class="contextRow">몇 단계만 더 거치면 넷플릭스 가입 완료!</div>
+                  <span class="contextRow">복잡한 단계는 모두 없앴습니다.</span>
                   <ul class="simpleForm">
                     <li class="nfFormSpace">
                       <input type="email" id="email" class="inputStyle" autocomplete="off" name="email"
@@ -49,20 +51,24 @@
                         <input type="checkbox" autocomplete="off" value="false">
                         <label>예,
                           저는 <a>개인정보 처리방침</a>에 따른 개인정보 수집 및
-                          활용에 동의합니다. <a>(상세 정보)</a></label>
+                          활용에 동의합니다. <a>(상세 정보)</a>
+                        </label>
                       </div>
                     </li>
                     <li class="nfFormSpace">
                       <div class="agree">
                         <input type="checkbox" autocomplete="off" value="false">
                         <label>예, 넷플릭스 특별 할인 알림
-                          이메일을 보내주세요. (선택 사항)</label>
+                          이메일을 보내주세요. (선택 사항)
+                        </label>
                       </div>
                     </li>
                   </ul>
                 </div>
                 <div class="submitBtnContainer"><button type="submit" autocomplete="off" tabindex="0"
-                    class="next-button">동의하고 계속</button></div>
+                    class="next-button"
+                    onclick="location.href='http://127.0.0.1:5500/paymentPicker/paymentPicker.html'">동의하고 계속</button>
+                </div>
             </div>
             </form>
           </div>
