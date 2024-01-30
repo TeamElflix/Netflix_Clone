@@ -1,20 +1,4 @@
 window.onload = function () {
-  var select = document.querySelector(".language-picker");
-  var options = [
-    { text: "한국어", value: "korean" },
-    { text: "English", value: "english" },
-  ];
-
-  for (var i = 0; i < options.length; i++) {
-    var opt = options[i];
-    var el = document.createElement("option");
-    el.textContent = opt.text;
-    el.value = opt.value;
-    select.appendChild(el);
-  }
-};
-
-window.onload = function () {
   const plans = document.querySelectorAll(".plan-container");
   plans.forEach((plan) => {
     plan.addEventListener("click", function () {
@@ -32,18 +16,4 @@ window.onload = function () {
       container.style.boxShadow = "rgba(0, 0, 0, 0.25) 0px 4px 10px 0px";
     });
   });
-
-  var select = document.querySelector(".language-picker");
-  var options = [
-    { text: "한국어", value: "korean" },
-    { text: "English", value: "english" },
-  ];
-
-  for (var i = 0; i < options.length; i++) {
-    var opt = options[i];
-    var el = document.createElement("option");
-    el.textContent = opt.text;
-    el.value = opt.value;
-    select.appendChild(el);
-  }
 };

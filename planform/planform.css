@@ -386,3 +386,21 @@
 .copy-text > div:first-child {
   margin-top: 20px;
 }
+
+.language-picker-container {
+  position: relative;
+  display: inline-block;
+}
+
+.language-picker {
+  padding-left: 30px;
+}
+
+.language-icon {
+  position: absolute;
+  left: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+}
