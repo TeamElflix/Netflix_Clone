@@ -35,11 +35,14 @@
                   <div class="contextRow">몇 단계만 더 거치면 넷플릭스 가입 완료!</div><span class="contextRow">복잡한 단계는 모두 없앴습니다.</span>
                   <ul class="simpleForm">
                     <li class="nfFormSpace">
-                      <input type="email" class="inputStyle" autocomplete="off" name="email" placeholder="이메일 주소">
+                      <input type="email" id="email" class="inputStyle" autocomplete="off" name="email"
+                        placeholder="이메일 주소">
+                      <div id="emailError"></div>
                     </li>
                     <li class="nfFormSpace">
-                      <input type="password" class="inputStyle" autocomplete="new-password" name="password" value=""
-                        placeholder="비밀번호를 추가하세요">
+                      <input type="password" id="password" class="inputStyle" autocomplete="new-password"
+                        name="password" value="" placeholder="비밀번호를 추가하세요">
+                      <div id="passwordError"></div>
                     </li>
                     <li class="nfFormSpace">
                       <div class="agree">
