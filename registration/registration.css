@@ -51,7 +51,6 @@
   overflow: hidden;
   width: 100%;
   background-color: #fff;
-  flex-grow: 1;
   padding-bottom: 95px;
 }
 
@@ -73,6 +72,7 @@
 .stepLogoContainer {
   display: inline-block;
 }
+
 .stepLogo {
   background: url(Devices.png) no-repeat 50% 50%;
   background-size: 260px;
@@ -141,53 +141,6 @@
   font-weight: 400;
   min-height: 64px;
 }
-/* .main-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100vw;  100% 화면 너비 
-  height: 100vh;  100% 화면 높이 
-  overflow: hidden;
-} */
-
-/* .inner-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
-  width: 600.2px;
-  height: 720.8px;
-  background-color: skyblue;
-  padding: 50px 32px;
-  margin-bottom: 15px;
-}
-
-.button-container {
-  width: 340px;
-  height: 65px;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 60px;
-}*/
-
-/* .next-button {
-  display: inline-block;
-  height: 100%;
-  width: 100%;
-  justify-content: center;
-  border: none;
-  border-radius: 4px;
-  font-size: 24px;
-  font-weight: 400;
-  padding: 20px 48px;
-  background-color: #e50914;
-  color: #fff;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
-  cursor: pointer;
-  vertical-align: middle;
-  letter-spacing: 0.025rem;
-  transition: opacity ease;
-} */
 
 .next-button:hover {
   opacity: 0.7;
