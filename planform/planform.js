@@ -15,7 +15,7 @@ window.onload = function () {
 };
 
 window.onload = function () {
-  const plans = document.querySelectorAll(".plan"); // 모든 .plan 요소를 선택합니다.
+  const plans = document.querySelectorAll(".plan-container"); // 모든 .plan 요소를 선택합니다.
 
   plans.forEach((plan) => {
     // 각 .plan 요소에 대해

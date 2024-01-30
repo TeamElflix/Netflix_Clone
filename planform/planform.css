@@ -114,6 +114,7 @@
   height: 650px;
   overflow: hidden;
   padding-top: 10px;
+  cursor: pointer;
 }
 
 .plan-container:active,
