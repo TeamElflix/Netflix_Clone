@@ -14,50 +14,28 @@ window.onload = function () {
   }
 };
 
-if ("WebSocket" in window) {
-  (function () {
-    function refreshCSS() {
-      var sheets = [].slice.call(document.getElementsByTagName("link"));
-      var head = document.getElementsByTagName("head")[0];
-      for (var i = 0; i < sheets.length; ++i) {
-        var elem = sheets[i];
-        var parent = elem.parentElement || head;
-        parent.removeChild(elem);
-        var rel = elem.rel;
-        if (
-          (elem.href && typeof rel != "string") ||
-          rel.length == 0 ||
-          rel.toLowerCase() == "stylesheet"
-        ) {
-          var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, "");
-          elem.href =
-            url +
-            (url.indexOf("?") >= 0 ? "&" : "?") +
-            "_cacheOverride=" +
-            new Date().valueOf();
+window.onload = function () {
+  const plans = document.querySelectorAll(".plan"); // 모든 .plan 요소를 선택합니다.
+
+  plans.forEach((plan) => {
+    // 각 .plan 요소에 대해
+    plan.addEventListener("click", function () {
+      // 클릭 이벤트 리스너를 추가합니다.
+      const container = this.closest(".plan-container"); // 가장 가까운 .plan-container 요소를 찾습니다.
+
+      // 클릭된 요소 외의 모든 .plan-container 요소의 스타일을 초기 상태로 되돌립니다.
+      document.querySelectorAll(".plan-container").forEach((otherContainer) => {
+        if (otherContainer !== container) {
+          // 클릭된 요소의 .plan-container가 아닌 경우
+          otherContainer.style.transition = "";
+          otherContainer.style.boxShadow = "";
         }
-        parent.appendChild(elem);
-      }
-    }
-    var protocol = window.location.protocol === "http:" ? "ws://" : "wss://";
-    var address =
-      protocol + window.location.host + window.location.pathname + "/ws";
-    var socket = new WebSocket(address);
-    socket.onmessage = function (msg) {
-      if (msg.data == "reload") window.location.reload();
-      else if (msg.data == "refreshcss") refreshCSS();
-    };
-    if (
-      sessionStorage &&
-      !sessionStorage.getItem("IsThisFirstTime_Log_From_LiveServer")
-    ) {
-      console.log("Live reload enabled.");
-      sessionStorage.setItem("IsThisFirstTime_Log_From_LiveServer", true);
-    }
-  })();
-} else {
-  console.error(
-    "Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading."
-  );
-}
-// ]]>
+      });
+
+      // 클릭된 요소의 .plan-container에 효과를 적용합니다.
+      container.style.transition =
+        "margin 250ms ease-in-out 0s, box-shadow 250ms ease-in-out 0s, border-color 250ms ease-in-out 0s";
+      container.style.boxShadow = "rgba(0, 0, 0, 0.25) 0px 4px 10px 0px";
+    });
+  });
+};

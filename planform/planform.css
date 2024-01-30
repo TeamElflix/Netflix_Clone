@@ -53,7 +53,7 @@
   justify-content: center;
   align-items: center;
   width: 100vw; /* 100% 화면 너비 */
-  height: 120vh; /* 100% 화면 높이 */
+  height: 140vh; /* 100% 화면 높이 */
   overflow: hidden;
 }
 
@@ -65,7 +65,7 @@
   padding: 20px 25px;
   box-sizing: border-box;
   transition: none 0s ease 0s;
-  background-color: aquamarine;
+  /* background-color: aquamarine; */
 }
 
 .form-plan-selection {
@@ -110,13 +110,17 @@
   border: 1px solid rgba(128, 128, 128, 0.7);
   border-radius: 18px;
   position: relative;
-  transition: margin 250ms ease-in-out 0s, box-shadow 250ms ease-in-out 0s,
-    border-color 250ms ease-in-out 0s;
   margin: 0px;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 4px 10px 0px;
   height: 650px;
   overflow: hidden;
   padding-top: 10px;
+}
+
+.plan-container:active,
+.plan-container:focus {
+  transition: margin 250ms ease-in-out 0s, box-shadow 250ms ease-in-out 0s,
+    border-color 250ms ease-in-out 0s;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 4px 10px 0px;
 }
 
 /* 공통 스타일 */
@@ -135,7 +139,15 @@
   transition: box-shadow 100ms ease-in-out 0s;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 13px -3px;
   color: white;
+  cursor: pointer; /* 마우스 커서가 포인터로 변경되도록 설정 */
+  position: relative;
 }
+
+/* .check-img {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+} */
 
 /* 프리미엄 */
 #premium {
@@ -146,6 +158,8 @@
       rgba(74, 42, 150, 0) 100%
     ),
     rgb(142, 151, 164);
+  position: relative;
+  display: inline-block;
 }
 
 /* 스탠다드 */
@@ -157,6 +171,8 @@
       rgba(74, 42, 150, 0) 100%
     ),
     rgb(29, 82, 157);
+  position: relative;
+  display: inline-block;
 }
 
 /* 광고형 스탠다드 */
@@ -168,6 +184,8 @@
       rgba(74, 42, 150, 0) 100%
     ),
     rgb(29, 82, 157);
+  position: relative;
+  display: inline-block;
 }
 
 .plan-text {
