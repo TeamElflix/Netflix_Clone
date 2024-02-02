@@ -3,10 +3,6 @@
   padding: 0;
 }
 
-body {
-  height: 100vh;
-}
-
 #Allpoint {
   background-color: transparent;
   color: #fff;
@@ -23,7 +19,7 @@ div {
 
 .login-background .background-img {
   /*width: 1905px;*/
-  width: 100%;
+  width: 1900px;
   /*width: 2560px;*/
 }
 
