@@ -58,8 +58,52 @@ div {
   color: #313034;
 }
 
+.login-main .loginBody .login-content .re-Login {
+  /*background-color: aqua;*/
+  width: 380px;
+
+  position: relative;
+  top: 42px;
+  left: 40px;
+}
+
 .login-main .loginBody .login-content .re-Login .re-Login-header {
   font-weight: normal;
+  margin-bottom: 20px;
+}
+
+.login-main .loginBody .login-content .re-Login .re-Login-subheader {
+  margin-bottom: 17px;
+}
+.login-main .loginBody .login-content .re-Login .Choice-container .select {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 25px;
+  margin-bottom: 12px;
+}
+
+.login-main
+  .loginBody
+  .login-content
+  .re-Login
+  .Choice-container
+  .select
+  .radio {
+  margin-bottom: 3px;
+}
+
+.login-main
+  .loginBody
+  .login-content
+  .re-Login
+  .Choice-container
+  .select
+  .radio
+  label {
+  position: relative;
+  top: -6px;
+  left: 3px;
 }
 
 .login-main .loginBody .notRobot {
