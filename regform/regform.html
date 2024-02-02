@@ -39,20 +39,21 @@
                     <li class="nfFormSpace">
                       <input type="email" id="email" class="inputStyle" autocomplete="off" name="email"
                         placeholder="이메일 주소">
-                      <div id="emailError"></div>
+                      <div id="emailError" class="error"></div>
                     </li>
                     <li class="nfFormSpace">
                       <input type="password" id="password" class="inputStyle" autocomplete="new-password"
                         name="password" value="" placeholder="비밀번호를 추가하세요">
-                      <div id="passwordError"></div>
+                      <div id="passwordError" class="error"></div>
                     </li>
                     <li class="nfFormSpace">
                       <div class="agree">
-                        <input type="checkbox" autocomplete="off" value="false">
+                        <input id="essential" type="checkbox" autocomplete="off" value="false">
                         <label>예,
                           저는 <a>개인정보 처리방침</a>에 따른 개인정보 수집 및
                           활용에 동의합니다. <a>(상세 정보)</a>
                         </label>
+                        <div id="essentialFalse" class="error"></div>
                       </div>
                     </li>
                     <li class="nfFormSpace">
@@ -65,8 +66,7 @@
                     </li>
                   </ul>
                 </div>
-                <div class="submitBtnContainer"><button type="button" class="next-button"
-                    onclick="location.href='http://127.0.0.1:5500/paymentPicker/paymentPicker.html'">동의하고 계속</button>
+                <div class="submitBtnContainer"><button type="button" class="next-button">동의하고 계속</button>
                 </div>
             </div>
             </form>
