@@ -112,11 +112,9 @@ div {
 }
 
 .nf-footer {
-  margin: 70px 410px;
-  /*width: calc(
-      100% - 60px
-    );*/ /* 부모 요소인 .footer-wrap과 같은 너비 적용 (좌우 30px씩 여백을 뺀 크기) */
-  height: 100%;
+  margin-left: 410px;
+  margin-bottom: 0px;
+  padding-top: 70px;
 }
 
 .nf-footer-top {
