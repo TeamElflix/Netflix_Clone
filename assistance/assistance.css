@@ -29,12 +29,21 @@ div {
   left: 2.55%;
 }
 
-/**/
+/*main*/
 
-.loginBody {
-  color: #333;
+.login-main .loginBody {
+  /*color: #333;
   margin: 0 auto;
-  padding: 0 5%;
+  padding: 0 5%;*/
+  position: absolute;
+  top: 101px;
+  left: 38.2%;
+
+  width: 500px;
+  height: 732.8px;
+  background-color: #f3f3f3;
+  border-radius: 3px;
+  color: #313034;
 }
 
 /*footer*/
