@@ -26,19 +26,33 @@ div {
 /*header*/
 .login-background .Elfheader {
   position: absolute;
-  top: 20px;
+  top: 18px;
   left: 2.55%;
 }
 
+.login-background .Elfheader a {
+  position: relative;
+  left: 1553px;
+  top: -25.5px;
+
+  color: #d32f27;
+  text-decoration-line: none;
+
+  font-size: 19.3px;
+}
+
+.login-background .Elfheader a:hover {
+  text-decoration-line: underline;
+}
 /*main*/
 
 .login-main .loginBody .login-content {
   position: absolute;
-  top: 101px;
+  top: 90px;
   left: 38.2%;
 
-  width: 500px;
-  height: 500px;
+  width: 460px;
+  height: 473px;
   background-color: #f3f3f3;
   border-radius: 3px;
   color: #313034;
@@ -59,18 +73,16 @@ div {
 
 .notRobot p .notRobot-detail {
   background-color: transparent;
-  color: rgb(79, 105, 255);
+  /*color: rgb(79, 105, 255);*/
+  color: #999b98;
   border: 0px;
+  text-decoration-line: underline;
 
   position: relative;
   top: 0px;
   left: 2px;
 
   font-size: 14px;
-}
-
-.notRobot p .notRobot-detail:hover {
-  text-decoration-line: underline;
 }
 
 .notRobot .notRobot-disclosure {
@@ -82,9 +94,9 @@ div {
   right: -71px;
 }
 
-.notRobot .notRobot-disclosure a {
+/*.notRobot .notRobot-disclosure a {
   color: rgb(79, 105, 255);
-}
+}*/
 
 /*footer*/
 .footer-wrap {
