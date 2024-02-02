@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 #Allpoint {
   background-color: transparent;
   color: #fff;
@@ -13,7 +18,8 @@ div {
 }
 
 .login-background .background-img {
-  width: 1900px;
+  width: 1905px;
+  /*width: 2560px;*/
 }
 
 /*header*/
