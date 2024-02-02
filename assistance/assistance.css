@@ -114,6 +114,65 @@ div {
   color: #999b98;
 }
 
+/*에러 메시지 디자인*/
+.error-style {
+  background-color: #f8d7da; /* 연한 색 배경으로 변경 */
+  border-color: #f5c6cb; /* 연한 색 테두리로 변경 */
+  color: #721c24; /* 연한 색 텍스트로 변경 */
+}
+
+/*문자로 비번 찾기*/
+.input-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.ui-input {
+  width: 200px;
+  height: 40px;
+  padding: 5px; /* 입력 텍스트와 상하좌우 간격을 조절 */
+  /* 다른 스타일 속성들을 필요에 따라 추가하세요. */
+}
+
+.error-message {
+  position: absolute;
+  bottom: -20px; /* 에러 메시지와 입력 텍스트 간의 간격을 조절 */
+  color: red; /* 에러 메시지 색상 */
+  display: none; /* 초기에는 에러 메시지를 숨김 */
+  /* 다른 스타일 속성들을 필요에 따라 추가하세요. */
+}
+/*문자로 비번찾기 - 드롭박스*/
+
+.sms-select {
+  position: relative;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+}
+
+.ui-input {
+  width: 200px;
+  height: 40px;
+  padding: 5px;
+}
+
+.error-message {
+  position: absolute;
+  bottom: -20px;
+  color: red;
+  display: none;
+}
+
+.dropdown {
+  margin-left: 10px;
+  height: 40px;
+}
+
+/* 버튼 스타일과 에러 스타일은 이전과 동일하게 유지합니다. */
+
 /*설명*/
 .notRobot p {
   display: flex;

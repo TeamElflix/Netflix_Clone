@@ -43,3 +43,77 @@ document.addEventListener("DOMContentLoaded", function () {
     smsDiv.style.display = "block";
   });
 });
+
+// 문자로 비번찾기 에러 메시지 처리
+document.addEventListener("DOMContentLoaded", function () {
+  var phoneInput = document.getElementById("phone-input");
+  var errorMessage = document.getElementById("error-message");
+  var receiveButton = document.getElementById("receive-button");
+
+  // 입력 텍스트 박스가 클릭되면 에러 메시지와 버튼 스타일 초기화
+  var inputAttempted = false;
+
+  phoneInput.addEventListener("click", function () {
+    inputAttempted = true;
+    errorMessage.style.display = "none";
+    receiveButton.classList.remove("error-style");
+  });
+
+  document.addEventListener("click", function (event) {
+    if (!phoneInput.contains(event.target) && inputAttempted) {
+      if (phoneInput.value.trim() === "") {
+        errorMessage.style.display = "block";
+        receiveButton.classList.add("error-style");
+      }
+    }
+  });
+});
+
+//이메일로 비번찾기 에러 메시지
+document.addEventListener("DOMContentLoaded", function () {
+  var emailInput = document.getElementById("forgot-pw-input");
+  var emailErrorMessage = document.querySelector(
+    ".email-select .message.error"
+  );
+  var emailReceiveButton = document.querySelector(
+    ".email-select .imail-receive"
+  );
+
+  var emailInputAttempted = false;
+
+  emailInput.addEventListener("click", function () {
+    emailInputAttempted = true;
+    emailErrorMessage.style.display = "none";
+    emailReceiveButton.classList.remove("error-style");
+  });
+
+  document.addEventListener("click", function (event) {
+    if (!emailInput.contains(event.target) && emailInputAttempted) {
+      if (emailInput.value.trim() === "") {
+        emailErrorMessage.style.display = "block";
+        emailReceiveButton.classList.add("error-style");
+      }
+    }
+  });
+});
+
+//자세히 알아보기 버튼
+document.addEventListener("DOMContentLoaded", function () {
+  var detailButton = document.querySelector(".notRobot-detail");
+  var disclosureDiv = document.querySelector(".notRobot-disclosure");
+
+  // 초기에는 disclosureDiv를 숨김
+  disclosureDiv.style.display = "none";
+
+  // 버튼 클릭 시 동작
+  detailButton.addEventListener("click", function () {
+    // disclosureDiv의 현재 표시 여부 확인
+    var isVisible = window.getComputedStyle(disclosureDiv).display !== "none";
+
+    // 토글 (현재 보이면 숨기고, 현재 숨겨져 있으면 보이게)
+    disclosureDiv.style.display = isVisible ? "none" : "block";
+
+    // 버튼 숨기기
+    detailButton.style.display = "none";
+  });
+});
