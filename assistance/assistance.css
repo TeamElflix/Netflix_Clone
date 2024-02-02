@@ -120,6 +120,18 @@ div {
   border-color: #f5c6cb; /* 연한 색 테두리로 변경 */
   color: #721c24; /* 연한 색 텍스트로 변경 */
 }
+/*이메일로 비번찾기*/
+.email-select .message-error {
+  color: red;
+}
+
+.email-select .imail-receive.error {
+  background-color: aqua; /* 연한 색상으로 변경 가능 */
+}
+
+.email-select .ui-input.error {
+  border: 1px solid red;
+}
 
 /*문자로 비번 찾기*/
 .input-container {
@@ -133,6 +145,14 @@ div {
   height: 40px;
   padding: 5px; /* 입력 텍스트와 상하좌우 간격을 조절 */
   /* 다른 스타일 속성들을 필요에 따라 추가하세요. */
+}
+
+.sms-select .error-message {
+  color: red;
+}
+
+.sms-select .ui-input.error {
+  border: 1px solid red;
 }
 
 .error-message {

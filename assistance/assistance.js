@@ -14,6 +14,8 @@ window.onload = function () {
   }
 };
 
+/*라디오 버튼 클릭시 내용 스위치*/
+
 document.addEventListener("DOMContentLoaded", function () {
   // ID로 라디오 버튼 가져오기
   var emailRadio = document.getElementById("select");
@@ -44,57 +46,86 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-// 문자로 비번찾기 에러 메시지 처리
+/*문자로 비번찾기 에러 메시지 처리*/
 document.addEventListener("DOMContentLoaded", function () {
   var phoneInput = document.getElementById("phone-input");
   var errorMessage = document.getElementById("error-message");
   var receiveButton = document.getElementById("receive-button");
 
-  // 입력 텍스트 박스가 클릭되면 에러 메시지와 버튼 스타일 초기화
+  // 입력 텍스트 박스 클릭 시 플래그 설정
   var inputAttempted = false;
 
-  phoneInput.addEventListener("click", function () {
+  phoneInput.addEventListener("focus", function () {
     inputAttempted = true;
-    errorMessage.style.display = "none";
-    receiveButton.classList.remove("error-style");
+    checkErrorMessage();
   });
 
+  // 페이지 어느 곳이든 클릭 시 에러 메시지 표시
   document.addEventListener("click", function (event) {
     if (!phoneInput.contains(event.target) && inputAttempted) {
-      if (phoneInput.value.trim() === "") {
-        errorMessage.style.display = "block";
-        receiveButton.classList.add("error-style");
-      }
+      checkErrorMessage();
     }
   });
+
+  // 입력 텍스트 박스에 포커스 이동 시 에러 메시지 숨김
+  phoneInput.addEventListener("focus", function () {
+    errorMessage.style.display = "none";
+    receiveButton.classList.remove("error-style");
+    phoneInput.classList.remove("error");
+  });
+
+  // 페이지 로드 시 에러 메시지 초기 숨김
+  errorMessage.style.display = "none";
+
+  // 페이지 로드 시 에러 메시지 체크
+  function checkErrorMessage() {
+    if (phoneInput.value.trim() === "") {
+      errorMessage.style.display = "block";
+      receiveButton.classList.add("error-style");
+      phoneInput.classList.add("error");
+    }
+  }
 });
 
 //이메일로 비번찾기 에러 메시지
 document.addEventListener("DOMContentLoaded", function () {
   var emailInput = document.getElementById("forgot-pw-input");
-  var emailErrorMessage = document.querySelector(
-    ".email-select .message.error"
-  );
-  var emailReceiveButton = document.querySelector(
-    ".email-select .imail-receive"
-  );
+  var errorMessage = document.querySelector(".email-select .message-error");
+  var receiveButton = document.querySelector(".email-select .imail-receive");
 
-  var emailInputAttempted = false;
+  var inputAttempted = false;
 
-  emailInput.addEventListener("click", function () {
-    emailInputAttempted = true;
-    emailErrorMessage.style.display = "none";
-    emailReceiveButton.classList.remove("error-style");
+  // 입력 텍스트 박스 클릭 시 플래그 설정
+  emailInput.addEventListener("focus", function () {
+    inputAttempted = true;
+    checkErrorMessage();
   });
 
+  // 페이지 어느 곳이든 클릭 시 에러 메시지 표시
   document.addEventListener("click", function (event) {
-    if (!emailInput.contains(event.target) && emailInputAttempted) {
-      if (emailInput.value.trim() === "") {
-        emailErrorMessage.style.display = "block";
-        emailReceiveButton.classList.add("error-style");
-      }
+    if (!emailInput.contains(event.target) && inputAttempted) {
+      checkErrorMessage();
     }
   });
+
+  // 입력 텍스트 박스에 포커스 이동 시 에러 메시지 숨김
+  emailInput.addEventListener("focus", function () {
+    errorMessage.style.display = "none";
+    receiveButton.classList.remove("error");
+    emailInput.classList.remove("error");
+  });
+
+  // 페이지 로드 시 에러 메시지 초기 숨김
+  errorMessage.style.display = "none";
+
+  // 페이지 로드 시 에러 메시지 체크
+  function checkErrorMessage() {
+    if (emailInput.value.trim() === "") {
+      errorMessage.style.display = "block";
+      receiveButton.classList.add("error");
+      emailInput.classList.add("error");
+    }
+  }
 });
 
 //자세히 알아보기 버튼
