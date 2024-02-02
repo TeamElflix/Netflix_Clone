@@ -8,6 +8,23 @@ div {
   display: block;
 }
 
+.login-background {
+  position: relative;
+}
+
+.login-background .background-img {
+  width: 1900px;
+}
+
+/*header*/
+.login-background .Elfheader {
+  position: absolute;
+  top: 20px;
+  left: 2.55%;
+}
+
+/**/
+
 .loginBody {
   color: #333;
   margin: 0 auto;
