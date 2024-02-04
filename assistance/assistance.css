@@ -216,7 +216,7 @@ div {
 .error-message {
   position: absolute;
   bottom: -15px;
-  left: 95px;
+  left: 100px;
 
   font-size: 12px;
   color: red;

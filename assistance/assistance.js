@@ -165,3 +165,48 @@ document.addEventListener("DOMContentLoaded", function () {
     detailButton.style.display = "none";
   });
 });
+
+/*드롭다운 선택시 글씨 없애기*/
+/*document.addEventListener("DOMContentLoaded", function () {
+  var dropdown = document.getElementById("dropdown");
+  var phoneInput = document.getElementById("phone-input");
+  var selectedOption = null; // 초기에는 선택된 값이 없음
+
+  // 초기 선택 값 설정
+  var initialOption = dropdown.options[0];
+  dropdown.innerHTML = `<option value="${initialOption.value}">${initialOption.text}</option>`;
+
+  dropdown.addEventListener("change", function () {
+    selectedOption = dropdown.options[dropdown.selectedIndex];
+    var optionText = selectedOption.text;
+    var countryCode = optionText.split(" ")[1];
+
+    // 현재 선택된 옵션을 드롭다운 버튼에 표시
+    dropdown.innerHTML = `<option value="${selectedOption.value}">${countryCode}</option>`;
+  });
+
+  dropdown.addEventListener("click", function (event) {
+    event.stopPropagation(); // 드롭다운을 열 때 문서의 클릭 이벤트 전파 방지
+    dropdown.size = dropdown.size > 1 ? 1 : 4; // 드롭다운 목록 크기 조절
+  });
+
+  document.addEventListener("click", function () {
+    // 문서 어느 곳이든 클릭 시 드롭다운 버튼이 열려있으면 값을 적용
+    if (dropdown.size > 1) {
+      // 전체 목록을 다시 표시
+      dropdown.innerHTML = `
+        <option value="미국">미국 +1</option>
+        <option value="일본">일본 +81</option>
+        <option value="대한민국">대한민국 +82</option>
+        <option value="중국">중국 +86</option>
+      `;
+
+      // 현재 선택된 옵션을 드롭다운 버튼에 표시
+      if (selectedOption) {
+        var optionText = selectedOption.text;
+        var countryCode = optionText.split(" ")[1];
+        dropdown.innerHTML += `<option value="${selectedOption.value}">${countryCode}</option>`;
+      }
+    }
+  });
+});*/
