@@ -165,54 +165,91 @@ div {
 }
 
 /*문자로 비번 찾기*/
+.sms-select p {
+  margin-bottom: 15px;
+}
+
 .input-container {
   position: relative;
   display: flex;
-  align-items: center;
+  /*align-items: center;*/
+
+  height: 45px;
+  width: 330px;
 }
 
 .sms-select .error-message {
-  color: red;
+  color: #a93327;
 }
 
 .sms-select .ui-input.error {
-  border: 1px solid red;
+  border: 1px solid #a93327;
 }
 
 .error-message {
   position: absolute;
   bottom: -20px; /* 에러 메시지와 입력 텍스트 간의 간격을 조절 */
-  color: red; /* 에러 메시지 색상 */
+  color: #a93327; /* 에러 메시지 색상 */
   display: none; /* 초기에는 에러 메시지를 숨김 */
   /* 다른 스타일 속성들을 필요에 따라 추가하세요. */
 }
+
+/*문자로 비번찾기 - input box*/
 /*문자로 비번찾기 - 드롭박스*/
 
 .sms-select {
   position: relative;
 }
 
-.input-container {
-  display: flex;
-  align-items: center;
-}
-
 .ui-input {
-  width: 200px;
-  height: 40px;
+  /*input text 박스*/
+  width: 300px;
+  height: 30px;
   padding: 5px;
+
+  border: 1.5px solid #c2c2c2;
+
+  position: relative;
+  left: -10px;
 }
 
 .error-message {
   position: absolute;
-  bottom: -20px;
+  bottom: -15px;
+  left: 95px;
+
+  font-size: 12px;
   color: red;
   display: none;
 }
 
 .dropdown {
   margin-left: 10px;
-  height: 40px;
+  width: 135px;
+  height: 42px;
+
+  border: 1px solid #c2c2c2;
+  border-right: 0px;
+
+  position: relative;
+  left: -10px;
+}
+
+#receive-button {
+  background-color: #357aef;
+
+  width: 380px;
+  height: 50px;
+  margin-top: 30px;
+  margin-bottom: 0px;
+
+  border: none;
+  outline: none;
+  border-radius: 2px;
+
+  color: white;
+  font-weight: normal;
+  font-size: 19px;
 }
 
 /* 버튼 스타일과 에러 스타일은 이전과 동일하게 유지합니다. */
