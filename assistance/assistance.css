@@ -115,22 +115,53 @@ div {
 }
 
 /*에러 메시지 디자인*/
-.error-style {
-  background-color: #f8d7da; /* 연한 색 배경으로 변경 */
-  border-color: #f5c6cb; /* 연한 색 테두리로 변경 */
-  color: #721c24; /* 연한 색 텍스트로 변경 */
-}
+/*.error-style {*/
+/*background-color: #f8d7da; */ /* 연한 색 배경으로 변경 */
+/*border-color: #f5c6cb;*/ /* 연한 색 테두리로 변경 */
+/*color: #721c24; */ /* 연한 색 텍스트로 변경 */
+/*}*/
 /*이메일로 비번찾기*/
+.email-select p {
+  margin-bottom: 15px;
+}
+
+#forgot-pw-input {
+  width: 370px;
+  height: 30px;
+  font-size: 15px;
+
+  margin-bottom: 8px;
+}
+
+.email-select .imail-receive {
+  background-color: #357aef;
+
+  width: 380px;
+  height: 50px;
+  margin-top: 13px;
+  margin-bottom: 0px;
+
+  border: none;
+  outline: none;
+  border-radius: 2px;
+
+  color: white;
+  font-weight: normal;
+  font-size: 19px;
+}
+
 .email-select .message-error {
-  color: red;
+  color: #a93327;
+  font-size: 12px;
+  margin-top: -8px;
 }
 
 .email-select .imail-receive.error {
-  background-color: aqua; /* 연한 색상으로 변경 가능 */
+  background-color: #93b3ec; /* 연한 색상으로 변경 가능 */
 }
 
 .email-select .ui-input.error {
-  border: 1px solid red;
+  border: 1px solid #a93327;
 }
 
 /*문자로 비번 찾기*/
@@ -138,13 +169,6 @@ div {
   position: relative;
   display: flex;
   align-items: center;
-}
-
-.ui-input {
-  width: 200px;
-  height: 40px;
-  padding: 5px; /* 입력 텍스트와 상하좌우 간격을 조절 */
-  /* 다른 스타일 속성들을 필요에 따라 추가하세요. */
 }
 
 .sms-select .error-message {

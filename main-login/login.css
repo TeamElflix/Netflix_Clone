@@ -3,13 +3,12 @@
   padding: 0;
 }
 
-body {
+/*body {
   height: 100vh;
 }
 body .container {
   height: 100vh;
-  background-color: aqua;
-}
+}*/
 
 /* background */
 .login-background {
@@ -17,7 +16,8 @@ body .container {
 }
 
 .login-background .background-img {
-  width: 135%;
+  /*width: 135%;*/
+  width: 2550px;
 }
 
 .black-transparent {
