@@ -261,31 +261,41 @@ div {
 /* 버튼 스타일과 에러 스타일은 이전과 동일하게 유지합니다. */
 
 /*설명*/
-.notRobot p {
+.notRobot .detail-wrap {
   display: flex;
+  flex-wrap: wrap;
+  height: 200px;
 }
 
-.notRobot p .notRobot-detail {
+.notRobot .detail-wrap .two {
+  width: 420px;
+  height: 18px;
+
+  font-size: 16px;
+  margin-top: -20px;
+}
+
+.notRobot .detail-wrap .notRobot-detail {
+  font-size: 16px;
   background-color: transparent;
-  /*color: rgb(79, 105, 255);*/
   color: #999b98;
   border: 0px;
   text-decoration-line: underline;
 
+  height: fit-content;
   position: relative;
-  top: 0px;
-  left: 2px;
-
-  font-size: 14px;
+  top: 1px;
+  left: -225px;
 }
 
 .notRobot .notRobot-disclosure {
-  width: 320px;
-  font-size: 14px;
+  color: #999b98;
+  width: 370px;
+  font-size: 16px;
 
   position: relative;
-  top: 0px;
-  right: -71px;
+  top: -165px;
+  right: 0px;
 }
 
 /*footer*/
