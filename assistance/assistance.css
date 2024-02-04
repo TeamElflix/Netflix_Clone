@@ -28,12 +28,18 @@ div {
   position: absolute;
   top: 18px;
   left: 2.55%;
+  width: 100%;
 }
 
 .login-background .Elfheader a {
-  position: relative;
+  /*position: relative;
   left: 1553px;
-  top: -25.5px;
+  top: -25.5px;*/
+  position: absolute;
+  top: 14px;
+  right: 5.4%;
+
+  width: 60px;
 
   color: #d32f27;
   text-decoration-line: none;
