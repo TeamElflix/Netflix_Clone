@@ -530,7 +530,6 @@ label[for="password"] {
     margin-left: 39px;
     margin-right: 0px;
     font-size: 14px;
-    /*background-color: red;*/
   }
 
   #main .login-window .info .detail-wrap .detailButton {
@@ -547,5 +546,49 @@ label[for="password"] {
     position: relative;
     top: -320px;
     right: -36px;
+  }
+}
+
+/*footer1*/
+@media (min-width: 961px) and (max-width: 1252px) {
+  .nf-footer {
+    margin-left: 30px;
+    margin-bottom: 0px;
+    padding-top: 70px;
+  }
+
+  .nf-footer-top {
+    padding-top: 0px;
+    font-size: 15px;
+  }
+
+  .footer-link {
+    font-size: 13px;
+  }
+
+  .footer-link {
+    width: calc(27% - 20px);
+  }
+
+  .language-picker {
+    width: 125px;
+    height: 35px;
+    font-size: 15px;
+  }
+
+  .copy-text {
+    font-size: 0.8em;
+  }
+}
+
+/*footer2 - 두줄 정렬*/
+@media (min-width: 500px) and (max-width: 960px) {
+  .footer-wrap {
+    height: 500px;
+
+    position: absolute;
+    top: 948px;
+
+    background-color: olive;
   }
 }
