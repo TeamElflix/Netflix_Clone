@@ -3,13 +3,6 @@
   padding: 0;
 }
 
-/*body {
-  height: 100vh;
-}
-body .container {
-  height: 100vh;
-}*/
-
 /* background */
 .login-background {
   position: relative;
@@ -431,14 +424,19 @@ label[for="password"] {
   margin-top: 20px;
 }
 
-@media (min-width: 300px) and (max-width: 820px) {
+@media (min-width: 300px) and (max-width: 600px) {
+  .login-background .background-img {
+    height: 1000px;
+  }
+
   .black-transparent {
     position: absolute;
     top: 0px;
     left: 0px;
     width: 100%;
-    height: 100%;
+    height: 100px;
     background-color: black;
+    border: 2px solid black;
   }
 
   #main .login-window {
@@ -446,7 +444,7 @@ label[for="password"] {
     left: 0px;
 
     width: 100%;
-    height: 50%;
+    height: 1110px;
     background-color: black;
   }
 
@@ -553,8 +551,6 @@ label[for="password"] {
 @media (min-width: 961px) and (max-width: 1252px) {
   .nf-footer {
     margin-left: 30px;
-    margin-bottom: 0px;
-    padding-top: 70px;
   }
 
   .nf-footer-top {
@@ -584,11 +580,61 @@ label[for="password"] {
 /*footer2 - 두줄 정렬*/
 @media (min-width: 500px) and (max-width: 960px) {
   .footer-wrap {
-    height: 500px;
-
+    height: 480px;
     position: absolute;
-    top: 948px;
+    top: 955px;
+  }
 
-    background-color: olive;
+  .nf-footer {
+    margin-left: 30px;
+  }
+
+  .nf-footer-top {
+    padding-top: 0px;
+    font-size: 15px;
+  }
+
+  /*.footer-link {
+    width: 176px;
+    height: 17px;
+    font-size: 16px;
+  }*/
+
+  #first,
+  #second,
+  #third,
+  #fourth,
+  #fifth,
+  #sixth {
+    justify-content: space-between;
+  }
+
+  .footer-link {
+    width: calc(50% - 20px);
+    font-size: 13px;
+  }
+
+  .language-picker {
+    width: 125px;
+    height: 35px;
+    font-size: 15px;
+  }
+
+  .copy-text {
+    font-size: 0.8em;
+  }
+}
+
+/*footer3 - main에 미디어쿼리 적용*/
+@media (min-width: 500px) and (max-width: 600px) {
+  .footer-wrap {
+    height: 500px;
+    position: absolute;
+    top: 720px;
+    border-top: 0.1rem solid #8b8b8b;
+  }
+
+  .nf-footer {
+    padding-top: 35px;
   }
 }
