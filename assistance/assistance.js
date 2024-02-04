@@ -101,6 +101,23 @@ document.addEventListener("DOMContentLoaded", function () {
     checkErrorMessage();
   });
 
+  emailInput.addEventListener("input", function () {
+    checkEmail();
+  });
+
+  function checkEmail() {
+    var emailValue = emailInput.value.trim();
+
+    // 간단한 이메일 형식 유효성 검사
+    if (/^\S+@\S+\.\S+$/.test(emailValue) || emailValue === "") {
+      // 올바른 이메일 형식일 때
+      errorMessage.style.display = "none";
+    } else {
+      // 올바르지 않은 이메일 형식일 때
+      errorMessage.style.display = "block";
+    }
+  }
+
   // 페이지 어느 곳이든 클릭 시 에러 메시지 표시
   document.addEventListener("click", function (event) {
     if (!emailInput.contains(event.target) && inputAttempted) {
