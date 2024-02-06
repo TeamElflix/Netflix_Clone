@@ -73,7 +73,7 @@ window.onload = function () {
       !emailInput.classList.contains("invalid") &&
       !passwordInput.classList.contains("invalid")
     ) {
-      location.href = "http://127.0.0.1:5500/paymentPicker/paymentPicker.html";
+      location.href = "../paymentPicker/paymentPicker.html";
     }
   }
 
