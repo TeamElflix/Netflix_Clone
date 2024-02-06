@@ -1,5 +1,7 @@
+/*언어 바꾸기*/
 window.onload = function () {
   var select = document.querySelector(".language-picker");
+
   var options = [
     { text: "한국어", value: "korean" },
     { text: "English", value: "english" },

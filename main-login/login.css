@@ -385,17 +385,18 @@ label[for="password"] {
 .language-picker {
   margin-top: 10px;
   margin-bottom: 10px;
-  width: 130px;
+  width: 120px;
   height: 38px;
   font-size: 16px;
   box-shadow: 0 0 0.5px rgba(0, 0, 0, 0.5);
   border-radius: 4px;
   background-color: rgb(0, 0, 0, 0.7);
-  color: white;
+  color: #767676;
 }
 
 .language-picker option {
-  font-size: 16px;
+  font-size: 14px;
+  font-weight: lighter;
 }
 
 .language-picker option[value="korean"] {
