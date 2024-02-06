@@ -28,16 +28,25 @@
                 <li>
                   <input
                     type="text"
-                    id="email-or-phoneNumber"
+                    id="email"
+                    autocomplete="off"
                     placeholder="이메일 주소 또는 전화번호"
                   />
                   <label for="email-or-phoneNumber"
                     >이메일 주소 또는 전화번호</label
                   >
+                  <div id="emailError"></div>
                 </li>
                 <li>
-                  <input type="text" id="password" placeholder="비밀번호" />
+                  <input
+                    type="text"
+                    id="password"
+                    autocomplete="new-password"
+                    placeholder="비밀번호"
+                  />
+
                   <label for="password">비밀번호</label>
+                  <div id="passwordError"></div>
                 </li>
               </ul>
               <ul>
