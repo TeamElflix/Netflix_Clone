@@ -122,12 +122,12 @@
   cursor: pointer;
 }
 
-.plan-container:active,
+/* .plan-container:active,
 .plan-container:focus {
   transition: margin 250ms ease-in-out 0s, box-shadow 250ms ease-in-out 0s,
     border-color 250ms ease-in-out 0s;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 4px 10px 0px;
-}
+} */
 
 /* 공통 스타일 */
 .plan {
