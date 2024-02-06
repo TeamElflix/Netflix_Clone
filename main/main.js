@@ -12,18 +12,18 @@
 //    - i번째만 minus display none 해제
 
 function openFaqAnswer() {
-  let faqs = document.querySelectorAll('#main .faqSection ol li .faqButton');
+  let faqs = document.querySelectorAll("#main .faqSection ol li .faqButton");
 
   faqs.forEach((faq) => {
     faq.onclick = function () {
-      faq.firstElementChild.classList.toggle('on');
-      faq.lastElementChild.classList.toggle('on');
-      faq.nextElementSibling.classList.toggle('on');
+      faq.firstElementChild.classList.toggle("on");
+      faq.lastElementChild.classList.toggle("on");
+      faq.nextElementSibling.classList.toggle("on");
       faqs.forEach((faqOther) => {
         if (faq !== faqOther) {
-          faqOther.firstElementChild.classList.add('on');
-          faqOther.lastElementChild.classList.remove('on');
-          faqOther.nextElementSibling.classList.remove('on');
+          faqOther.firstElementChild.classList.add("on");
+          faqOther.lastElementChild.classList.remove("on");
+          faqOther.nextElementSibling.classList.remove("on");
         }
       });
     };
@@ -31,15 +31,17 @@ function openFaqAnswer() {
 }
 
 function clickEmailButton() {
-  let buttons = document.querySelectorAll('#emailForm #btn');
+  let buttons = document.querySelectorAll("#emailForm #btn");
   buttons.forEach((button) => {
-    let input = button.previousElementSibling.querySelector('input');
+    let input = button.previousElementSibling.querySelector("input");
     button.onclick = function () {
       if (!checkEmailValidation(input.value)) {
         input.focus();
       }
       if (checkEmailValidation(input.value)) {
         button.parentElement.submit();
+        // 검증을 통과하면 페이지 이동
+        location.href = "../details-view/registration/registration.html";
       }
     };
   });
@@ -47,15 +49,15 @@ function clickEmailButton() {
 
 function clickAdButton() {
   let button = document.querySelector(
-    '.ad .adContainer .adTextContainer button'
+    ".ad .adContainer .adTextContainer button"
   );
   button.onclick = function () {
-    window.location.href = '#';
+    window.location.href = "../details-view/signup/signup.html";
   };
 }
 
 function changeEmailInput() {
-  let inputs = document.querySelectorAll('#emailForm .email .emailInput');
+  let inputs = document.querySelectorAll("#emailForm .email .emailInput");
 
   inputs.forEach((input) => {
     let isInputChanged = false;
@@ -95,10 +97,10 @@ function checkInputValidation(input) {
 
   if (input.value.length < 5) {
     inputInvalidate(input);
-    invalidEmailText(input, '이메일 주소는 반드시 입력하셔야 합니다.');
+    invalidEmailText(input, "이메일 주소는 반드시 입력하셔야 합니다.");
   } else if (input.value.length > 50 || !isValidInput) {
     inputInvalidate(input);
-    invalidEmailText(input, '이메일 주소를 정확히 입력하세요.');
+    invalidEmailText(input, "이메일 주소를 정확히 입력하세요.");
   } else if (isValidInput) {
     inputValidate(input, input);
   }
@@ -108,28 +110,28 @@ function invalidEmailText(input, text) {
 }
 
 function inputValidate(input) {
-  input.parentElement.classList.remove('invalid');
-  input.parentElement.classList.add('valid');
-  input.nextElementSibling.classList.remove('on');
+  input.parentElement.classList.remove("invalid");
+  input.parentElement.classList.add("valid");
+  input.nextElementSibling.classList.remove("on");
 }
 function inputInvalidate(input) {
-  input.parentElement.classList.remove('valid');
-  input.parentElement.classList.add('invalid');
-  input.nextElementSibling.classList.add('on');
+  input.parentElement.classList.remove("valid");
+  input.parentElement.classList.add("invalid");
+  input.nextElementSibling.classList.add("on");
 }
 
 function addInputOutline(input) {
-  input.parentElement.classList.add('on');
+  input.parentElement.classList.add("on");
 }
 function removeInputOutline(input) {
-  input.parentElement.classList.remove('on');
+  input.parentElement.classList.remove("on");
 }
 
 function shiftLabel(input) {
-  input.previousElementSibling.classList.add('on');
+  input.previousElementSibling.classList.add("on");
 }
 function unshiftLabel(input) {
-  input.previousElementSibling.classList.remove('on');
+  input.previousElementSibling.classList.remove("on");
 }
 
 function checkEmailValidation(email) {
