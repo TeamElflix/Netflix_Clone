@@ -423,6 +423,18 @@ label[for="password"] {
 }
 
 @media (min-width: 300px) and (max-width: 600px) {
+  #emailError {
+    position: absolute;
+    top: 160px;
+    left: 50px;
+  }
+
+  #passwordError {
+    position: absolute;
+    top: 258px;
+    left: 50px;
+  }
+
   .login-background .background-img {
     height: 1000px;
   }
@@ -480,8 +492,22 @@ label[for="password"] {
 
   input:placeholder-shown + label[for="password"] {
     position: absolute;
-    top: 190px;
+    top: 210px;
     left: 65px;
+  }
+
+  input:focus + label[for="email-or-phoneNumber"],
+  label[for="email-or-phoneNumber"] {
+    position: absolute;
+    left: 60px;
+    top: 107px;
+  }
+
+  input:focus + label[for="password"],
+  label[for="password"] {
+    position: absolute;
+    left: 60px;
+    top: 200px;
   }
 
   #main .login-window .check_wrap input {
