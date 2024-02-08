@@ -20,8 +20,23 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-/*이메일, 비밀번호 조건검사*/
+/*언어 바꾸기*/
 window.onload = function () {
+  var select = document.querySelector(".language-picker");
+
+  var options = [
+    { text: "한국어", value: "korean" },
+    { text: "English", value: "english" },
+  ];
+
+  for (var i = 0; i < options.length; i++) {
+    var opt = options[i];
+    var el = document.createElement("option");
+    el.textContent = opt.text;
+    el.value = opt.value;
+    select.appendChild(el);
+  }
+
   // 이메일 조건검사
   var emailInput = document.getElementById("email");
   var emailErrorDiv = document.getElementById("emailError");
@@ -72,23 +87,5 @@ window.onload = function () {
         passwordErrorDiv.textContent = "";
       }
     }
-  }
-};
-
-/*언어 바꾸기*/
-window.onload = function () {
-  var select = document.querySelector(".language-picker");
-
-  var options = [
-    { text: "한국어", value: "korean" },
-    { text: "English", value: "english" },
-  ];
-
-  for (var i = 0; i < options.length; i++) {
-    var opt = options[i];
-    var el = document.createElement("option");
-    el.textContent = opt.text;
-    el.value = opt.value;
-    select.appendChild(el);
   }
 };
