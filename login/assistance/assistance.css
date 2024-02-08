@@ -428,7 +428,11 @@ div {
   margin-top: 20px;
 }
 
-@media (min-width: 300px) and (max-width: 600px) {
+@media (min-width: 150px) and (max-width: 600px) {
+  .login-background {
+    height: 1064px;
+  }
+
   .login-background .Elfheader {
     position: absolute;
     top: 0px;
@@ -441,6 +445,10 @@ div {
     position: absolute;
     top: 11px;
     left: 9px;
+  }
+
+  .login-background .background-img {
+    height: 1100px;
   }
 
   .login-background .Elfheader a {
